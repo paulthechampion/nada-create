@@ -1,0 +1,114 @@
+
+<main>
+    <section class="slide-section">
+            <div class="slide-container">
+                <div class="image-container">
+                    <img src="/images/iwobi1.jpg" alt="" class="slideImg fade"/>
+                </div>
+                <div class="image-container">
+                    <img src="/images/female.jpg" alt=""class="slideImg fade" />
+                </div>
+                <div class="image-container">
+                    <img src="/images/new3.jpg" alt=""class="slideImg fade" />
+                </div>
+                <div class="image-container">
+                    <img src="/images/new4.jpg" alt=""class="slideImg fade" />
+                </div> 
+                <div class="image-container">
+                    <img src="/images/ndidi.jpg" alt=""class="slideImg fade" />
+                </div> 
+            </div>
+
+            <div class="dicover-new-div"><h1 class="dicover-new-header">DISCOVER NEW TRENDS</h1>
+                <a href="/store?page=1&limit=1" class="shop-now btn">SHOP NOW</a>
+            </div>
+    </section>
+
+    <section class="photoblast-sec">
+        <div class="forWrap">
+            <div class="photoblast-divs">
+                <div class="photoblast-div">
+                    <div class="photoblast-second-div">
+                        <div class="photoblast-info-div">
+                        <h1 class="photoblast-header"> NEW YEAR PHOTOBLAST<br></h1>
+                            <a class="photoblast-btn">NEW COLLECTION</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="photoblast-divs">
+                <div class="formen-women-div">
+                   <div class="formen-women-second-div">
+                       
+                        <a href="" class="formen-women-info">MID SUMMER WOMEN</a>
+                    </div>
+                </div>
+
+                <div class="formen-women-div bottom-men">
+                    <div class="formen-women-second-div">
+                        <a href="" class="formen-women-info"> SHOP EXCLUSIVE MEN </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <br><br><hr>
+    
+   
+   
+    <section>
+        <div class="newRelease">
+            <h2 class="new-release-header">NEW RELEASES</h2>
+            <div class="wrapper">
+                <div class="wrapper-div"><% products.forEach(product =>{%>
+                    <a href="/store/<%=product.id%>" class="wrapper-link">
+                    <img class=" wrapper-items" src="<%=product.prodImagePath %>" >
+                   </a>
+                    <div class="wrapper-info"> 
+                        <%=product.name%><br>
+                        <span class="wrapper-price"> NGN <%=product.price%></span>
+                    </div> 
+                        
+                     <%})%>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="display-section">
+
+    </section>
+        <div class="know">
+            <h1>Know when new kits drop</h1>
+            <p>Get informed when a Jersey and other products drop</p>
+            <a href="" class="joinEl">Join the Email list</a>
+        </div>
+    
+
+
+</main>
+
+
+
+
+    <script>
+        var slideIndex=0;
+
+        show()
+        function show(){
+            var imageCont= document.getElementsByClassName('image-container');
+            for(var i =0; i<imageCont.length; i++){
+                imageCont[i].style.display="none";
+            };
+
+            slideIndex++;
+
+            if(slideIndex>imageCont.length){slideIndex=1};
+
+            imageCont[slideIndex-1].style.display="block";
+
+            setTimeout(show,4000);
+        };
+    </script>

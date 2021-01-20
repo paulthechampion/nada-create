@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+.say-no{
+    text-align: center;
+    background-color: rgb(180, 135, 76);
+    font-weight: bold;
+    padding: .5em;
+    font-size: .8em;
+}
+
+.nada-heading-div{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.nada-heading{
+    
+    font-size: 1.5em;
+    display: inline;
+    text-align: center;
+}
+
+.cart-link{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: .7em;
+    text-align: center;
+    position: relative;
+    bottom:5px;
+    right:5px;
+    
+   
+    
+}
+
+.user-cart-div{
+    
+    margin-top: .5em;
+    position: absolute;
+    right: 3%;
+    display: inline ;
+}
+
+.dropbtn{
+    outline: none;
+    border: none;
+    background-color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    position: relative;
+    
+   
+    
+}
+
+.home-link{
+    text-decoration: none;
+    color: black;
+}
+
+.badge{
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    top:-30%;
+    right: 0%;
+    color:white;
+    background-color: black;
+    font-size: 1em;
+    
+    
+}
+
+
+
+.dropdown{
+    display: none;
+    
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: ease-in 1s;
+   
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+   
+}
+
+.menuBar{
+    display: none;
+    text-align: center;
+    margin-top: 3.5em;
+    margin-bottom: 2em;
+}
+.menuLink{
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+}
+
+.fa-bars{
+    position: fixed;
+    top:5em;
+    left:1.7em;
+    z-index: 4;
+}
+
+.heart-phone{
+    margin-top: 1em;
+    display: block;
+    text-align: center;
+}
+
+#phone-menu{
+    position: fixed;
+    left:-270px;
+    top:0%;
+    width: 270px;
+    height: 100%;
+    z-index: 7;
+    background-color: white;
+    transition:  .5s;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.phone-menu-span{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    margin-top: 2em;
+    font-weight: bolder;
+    
+    
+}
+.phone-menu-header{
+    margin-top: 1em;
+}
+.phone-menu-link{
+    color: black;
+}
+
+#phone-menu.active{
+    left: 0;
+}
+
+.phone-header-footer{
+    margin-top: 1em;
+    
+    
+}
+
+.fa-times{
+    text-align: left;
+    margin-top: 1em;
+    position: relative;
+    left:40%
+}
+
+@media(min-width :586px){
+
+}   
+
+@media(min-width :1085px){
+    .say-no{
+        font-size: 1em;
+    }
+    .nada-heading{
+    
+        font-size: 2.5em;
+       
+    }
+    .menuBar{
+        display: block;
+    }
+    
+    #phone-menu{
+        display: none;
+    }
+    
+    .menu-line{
+        display: none;
+    }
+
+    .dropdown{
+        display: inline;
+    }
+
+    .heart-phone{
+        display: none;
+    }
+
+    .cart-link{
+        font-size: 1.2em;
+        bottom:0px;
+        right:0px;
+    }
+
+    .badge{
+        font-size: .8em;
+    }   
+}

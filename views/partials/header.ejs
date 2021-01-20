@@ -1,0 +1,80 @@
+<header class="header">
+    <div class="say-no">SAY NO TO ANY FORM OF OPPRESSION. NADA.</div>
+        <div class="nada-heading-div">
+            
+            <span class="menu-line">
+            <i class="fa fa-bars fa-lg" aria-hidden="true" onclick="show2()"></i>
+            </span>
+            <a href="/" class="home-link"><h1 class="nada-heading">NADA CREATE</h1></a>
+            
+            <div class="user-cart-div">
+        
+                
+                    <div class="dropdown">
+                            <button class="dropbtn"><i class="fa fa-user-circle-o" aria-hidden="true"></i>  Profile
+                            <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                        <% if (login) {%>
+                            <a href="/user/profile">User Account</a>
+                            <a href="/user/logout">Logout</a>
+                        <%}else {%>
+                            <a href="/user/signup">Sign Up</a>
+                            <a href="/user/signin">Sign In</a>
+                        <%}%>    
+                        </div>
+                    </div>
+                <span class="cart-word">
+                <a href="/store/cart" class="cart-link ">
+                    Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <% if(session.cart) { %>
+                        <span class="badge"><%= session.cart.totalQty %></span>
+                    <% } %>
+                    </a>
+                </span>
+        </div>
+        
+        
+    </div>
+    
+    <nav class="menuBar">
+        <a href="/"class="menuLink ahome"><strong>HOME</strong></a>
+        <a href="/store?page=1&limit=3"class="menuLink"><strong>MEN <i class="fa fa-caret-down"></i></strong></a>
+        <a href="/"class="menuLink"><strong>WOMEN <i class="fa fa-caret-down"></i></strong></a>
+        <a href="/"class="menuLink"><strong>PHOTOBLAST</strong></a>
+        <a href="/"class="menuLink"><strong>ABOUT</strong></a>
+        <a href="/"class="menuLink"><strong>CONTACT</strong></a>
+        <span class="heart">
+            <i class="fa fa-heart" aria-hidden="true"></i>
+        </span>
+        
+    </nav>
+        <span class="heart-phone">
+        <i class="fa fa-heart" aria-hidden="true"></i>
+        </span>
+
+        <div class="phone-menu" id="phone-menu">
+            <i class="fa fa-times fa-lg" aria-hidden="true" onclick="show2()"></i>
+
+            <h1 class="phone-menu-header">User Profile</h1>
+
+            <span class="phone-menu-span" ><a href="/" class="phone-menu-link">Home</a></span>
+            <span class="phone-menu-span"><a href="/store?page=1&limit=3" class="phone-menu-link">Men</a></span>
+            <span class="phone-menu-span"><a href="" class="phone-menu-link">Women</a></span>
+            <span class="phone-menu-span"><a href="" class="phone-menu-link">Photoblast</a></span>
+            <span class="phone-menu-span"><a href="" class="phone-menu-link">About</a></span>
+            <span class="phone-menu-span"><a href="" class="phone-menu-link">contact</a></span>
+            
+            <div class="phone-header-footer">
+            <hr>
+            <h1>NADA</h1>
+            </div>
+        </div>    
+</header>
+
+<script>
+        function show2(){
+            document.getElementById("phone-menu").classList.toggle("active");
+        }
+        
+</script>

@@ -1,0 +1,54 @@
+    <script src="/script/cart.js" async></script>
+    <h3 class="head-item1">CART</h3>
+    <%if(products){%>
+        <section class="shopSec">
+            
+                
+            
+            <div class="cart-items">
+                
+                <%products.forEach(product=>{%>
+
+                
+                <div class="cartRow">
+                    <div class="cartColomn cartItem">
+                        <img src="<%=product.picture%>" width="100" height="100" />
+                        <%=product.item.name%>
+                    </div>
+                       
+                    <div class="cartColomn cartQuantity">
+                        <div class="dropdown">
+                            <button class="dropbtn">Quantity
+                            <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                               <a href="/store/add/<%=product.item._id%>">Add by 1</a>
+                                <a href="/store/reduce/<%=product.item._id%>">Reduce by 1</a>
+                                
+                            
+                            </div>
+                      </div>
+                         <span class="cartColomn cartPrice">$<%=product.price%></span>
+                    </div>
+                    
+                </div>
+                <a href="/store/remove/<%=product.item._id%>">Delete this Item</a>
+                <hr>
+                <%})%>
+                
+            
+                
+                
+            </div>   
+                <div class="cart-total">
+                <span class="cart-total-title">TOTAL=</span>
+                <span class="cart-total-price">$<%=totalPrice%></span>
+                </div>
+                    
+                <a href="/store/checkout"  class="addCart purc">PURCHASE</a>
+
+            </section>
+    <%}else{%>
+        <p>Your Cart is empty, Patroize us by buying our products</p>
+     <%}%>   
+    

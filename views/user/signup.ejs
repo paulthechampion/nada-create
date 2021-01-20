@@ -1,0 +1,24 @@
+
+<div>
+    <h2>Sign Up</h2>
+    <%if (hasErrors) {%>
+       
+        <%message.forEach(messages=>{%>
+        <div> <%=messages%></div>
+  <%})}%>  
+   
+    <div>
+        <form action="/user/signup" method="POST">
+            <label>Email</label>
+            <input name="email" type="email"/>
+            <label>Password</label>
+            <input name="password" type="password"/>
+            <input type="hidden" name="_csrf" value="<%=csrfToken%>"/>
+            <button type="submit">Sign Up</button>
+        </form>
+
+        Already have an account?<a href="/user/signin">Sign In</a>
+    </div>
+
+    
+</div>

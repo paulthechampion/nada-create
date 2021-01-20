@@ -1,0 +1,69 @@
+    <hr>
+    <section class="shopSec">
+            <div class="line-header-wrap">
+                <div class="shop-line"></div> 
+                <h1 class="shop-header">shop</h1>
+            </div>
+    
+         
+            <div class="shop-itemsss">
+                
+                <%if(previous){%>
+                    <a href="/store?page=<%=previous.page%>&limit=3" class="arrow">
+                        <i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
+                    <%}%>
+                <div class="shop-items">
+                    <% products.forEach(product =>{%>
+                        
+                            
+                        <div class="shop-item">
+                            
+                                
+                                <a href="/store/<%=product.id%>">
+                                <img class="store-products " src="<%=product.prodImagePath %>" >
+                                </a></br>
+                            <span class="club"><%=product.name%></span><br>
+                            <span class="price-tag">$<%=product.price%></span>
+                            <a href= "/store/add-to-cart/<%=product.id%>" class="addCart">ADD TO CART</a>
+                        
+                        </div> 
+                    
+                    <%})%>
+                
+                
+                </div>
+
+                
+    
+                <%if(previous){%>
+                    <a href="/store?page=<%=previous.page%>&limit=3" class="arrow">
+                        <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+                    </a>
+                <%}%>
+                <%if(next){%>
+                    <a href="/store?page=<%=next.page%>&limit=3" class="arrow">
+                        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                    </a>
+                <%}%>
+            </div>
+            
+            <div class ="poem">
+
+                <h1>Weekly poetry</h1>
+                
+             lionccccodklknlkjdrlkr<br>fniorionfekifrnofoinfcrorofronfo<br>
+           
+            </div>
+
+        <h3 class="head-item">BOOTS</h3>
+        <div class= 'NotAv'>Not Available at the moment</div>
+        </div>
+</section>
+
+<script>
+    function show(){
+    console.log(req.query)}
+</script>
+
+
+

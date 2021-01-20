@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Yusei+Magic&display=swap');
+@import "shared/productCover.css";
+@import "shared/header.css";
+@import "shared/home.css";
+@import "shared/shop.css";
+
+body{
+    margin:0px; 
+    padding:0px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.slide-container{
+    text-align: center  ;
+}
+
+
+
+.slideImg{
+    width:100%;
+    height:350px;
+    margin-top: 1em;
+    transition: ease-in 2s;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 4s;
+    animation-name: fade;
+    animation-duration: 4s;
+  }
+  
+@-webkit-keyframes fade {
+    from {opacity: .6} 
+    to {opacity: 1}
+  }
+  
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @media(min-width :1085px){
+    .slideImg{  height:700px;
+    }
+  }  

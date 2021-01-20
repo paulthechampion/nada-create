@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+.line-header-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4em;
+    
+}
+
+.shop-line{
+    border-top:2.5px solid black;
+    width: 5em;
+    position: relative;
+    top:.7em;
+    left: 6%;
+    margin: auto;
+   
+}
+
+.shop-header{
+    font-size: 4em;
+    display: block;
+    position: relative;
+    right: 13%;
+    margin:auto; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.arrow{
+    font-size: 5em;
+    text-decoration: none;
+    color: black;
+}
+
+.shop-item{
+    margin: auto;
+    margin-bottom: 3em;
+}
+
+.shop-items{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5em;
+}
+
+.store-products{
+    text-align: center;
+    height: 15em; 
+    width: 11em;
+}
+
+
+
+.poem{
+    margin-top: 10em;
+}
+
+@media(min-width :413px){
+    .shop-line{
+        left:10%
+    }
+}
+
+@media(min-width :1085px){
+    .shop-line{
+        border-top:2.5px solid black;
+        width: 13em;
+        top:1em;
+        left: 8%;
+    }   
+    .shop-header{
+        font-size: 8em;
+        right: 22%;
+    }    
+    .store-products{
+        margin: 1em; 
+        height: 25em; 
+        width: 18em;
+    } 
+    .shop-items{
+        margin-left: 4em;
+    }    
+}    

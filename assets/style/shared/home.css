@@ -1,0 +1,238 @@
+.forWrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photoblast-sec{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+.photoblast-divs{
+   
+    margin: auto;
+    
+}
+
+.photoblast-info-div{
+    position: relative;
+    left:25%;
+    top:25%;
+    width: 50%;
+}
+
+.photoblast-div{
+    height:16em;
+    border: 1px solid black;
+    width: 20em;
+    margin-left:auto;
+    background-color: black;
+    margin-bottom: 3em;
+}
+
+.photoblast-second-div{
+    border: 3px solid whitesmoke;
+    height:14em;
+    background-color: black;
+    margin: 1em;
+}
+
+.photoblast-header{
+    color: whitesmoke;
+    font-size: 1.5em;
+}
+
+.photoblast-btn{
+    background-color: whitesmoke;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    left:8em;
+    padding:10px;
+    margin-bottom: 3em;
+    font-size: .5em;
+}
+
+.formen-women-div{
+    height:16em;
+    border: 2px solid black;
+    width: 20em;
+    
+
+}
+.formen-women-second-div{
+    border: 7px solid black;
+    height:13em;
+    margin: 1em;
+}
+
+.formen-women-info{
+    display: block;
+    text-decoration: none;
+    position: relative;
+    top:30%;
+    left:35%;
+    width: 60%;
+    color: black;
+    font-size: 1.2em;
+}
+
+.bottom-men{
+    margin-top: 3em;
+}
+
+
+
+.new-release-header{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.wrapper-items{
+    margin: 2em; 
+    height: 15em; 
+    width: 10em;
+    margin-bottom: 3em; 
+   
+    
+}
+
+
+
+.wrapper-div{
+    overflow-x: auto;
+    white-space: nowrap;   
+    
+    scrollbar-width: none;
+     
+}
+.wrapper-div::-webkit-scrollbar{
+    display: none;
+}
+
+.wrapper-info{
+    display: inline-block;
+    position: relative;
+    right: 12.3em;
+    text-align: left;
+    
+}
+
+
+
+
+.wrapper-link{
+    text-decoration: none;
+}
+
+.dicover-new-div{
+    position: absolute;
+    top:38%;
+    left:25%;
+    width: 70%;
+    
+   
+}
+
+.dicover-new-header{
+    font-size: 2em;
+    color: whitesmoke;
+
+}
+
+.shop-now {
+    position: relative;
+    left: 55%;
+    bottom: 1.8em;
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    background-color: rgb(0, 0, 0);
+    padding:10px;
+    font-size: .7em;
+}
+
+.display-section{
+    margin-top: 5em;
+    height:20em;
+    background-color: black;
+}
+
+@media(min-width :1085px){
+    .dicover-new-header{ 
+        font-size: 4em;
+        
+    }  
+    
+    .dicover-new-div{
+        top:70%;
+        left:30%;
+        width: 50%;
+    }
+
+    .shop-now {
+        font-size: 1.5em;
+        left: 45%;
+        bottom: 2.3em;
+    }
+
+    .photoblast-sec{
+        margin-top: 5em;
+        margin-bottom: 5em;
+    }   
+    .photoblast-div{
+        border: 5px solid black;
+        height:35em;
+        width: 35em;
+        margin-left:5em;
+        margin-bottom: 0;
+    }
+    
+    .photoblast-second-div{
+        border: 1em solid whitesmoke;
+        height:31em;
+        margin: 1em;
+    }
+
+    .formen-women-div{
+    margin-right:5em;
+    margin-left: 0;
+    }
+
+    .photoblast-header{
+    font-size: 2em;
+    }  
+    .photoblast-info-div{
+        
+        left:35%;
+        top:30%;
+    }
+    .photoblast-btn{
+        font-size: 1em;
+        left:3em;
+    }    
+
+    .new-release-header{
+        font-size: 3em;
+        margin-top: 2em;
+    }
+    .wrapper-items{
+        margin: 2em; 
+        height: 25em; 
+        width: 18em;
+        margin-bottom: 3em; 
+       
+        
+    }
+    .wrapper-info{
+        display: inline-block;
+        position: relative;
+        right: 20.3em;
+        text-align: left;   
+    }
+
+    .display-section{
+        margin-top: 5em;
+        height:40em;
+        background-color: black;
+    }
+}   
