@@ -154,7 +154,39 @@
 .display-section{
     margin-top: 5em;
     height:20em;
-    background-color: black;
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5a021e22e5dd5b6e230895ca/1574105989356-ACZMDDY3GKCS58U481M7/ke17ZwdGBToddI8pDm48kC2TMBTb8cC4i281bfF8qjJ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0luj0xCD0oh5KMc0gpox0u-8GQdoeCvQbTG6AI1FQq_tTThXSk4MPUI_nT_-Q8HnkQ/JFT_0832_2.jpg');
+    background-repeat: no-repeat;
+    width:100%;background-size: cover;
+    background-position: center; 
+    
+}
+
+.display-section-div{
+    text-align: right;
+    color: white;
+    margin: auto;
+    position: relative;
+    top:10em;
+    width: 50%;
+    margin-right: .5em;
+}
+
+.display-section-header{
+    font-size: 1.5em;
+}
+
+.display-section-link{
+    outline: none;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding:10px;
+}
+
+.random-display-section{
+    margin-top: 5em;
+    height:20em;
+    background-color: rgb(245, 236, 236);
 }
 
 @media(min-width :1085px){
@@ -233,6 +265,24 @@
     .display-section{
         margin-top: 5em;
         height:40em;
-        background-color: black;
+    }
+
+    .random-display-section{
+        margin-top: 5em;
+        height:40em;
+        background-color: rgb(245, 236, 236);
+    }
+    .display-section-div{
+        top:22em;
+        width: 30%;
+        margin-right: 5em;
+    }
+    
+    .display-section-header{
+        font-size: 3em;
+    }
+    
+    .display-section-link{
+        padding:10px;
     }
 }   

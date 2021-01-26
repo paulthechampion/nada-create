@@ -1,0 +1,93 @@
+.sign-div{
+    text-align: center;
+}
+
+.sign-message-div{
+    color: red;
+}
+
+
+
+.email-div{
+    margin-top: 2em;
+   position: relative;
+   right:22%;
+   margin-bottom: 5px;
+  
+}
+
+.password-div{
+    position: relative;
+    right:18%;
+    margin-bottom: 5px;
+    
+}
+
+.sign-input{
+    width: 15em;
+    height: 2em;
+    outline: none;
+    background-color: rgb(250, 248, 248);
+    filter: none;
+}
+
+.sign-input-div{
+    margin: auto;
+    width: 98%;
+    margin-top: 1em;
+    border: 1.5px solid black;
+}
+
+.sign-input-small-div{
+    margin-bottom: 2em;
+}
+
+.sign-button{
+    outline: none;
+    border: none;
+    background-color: rgb(11, 230, 11);
+    color: white;
+    padding:5px;
+    padding-right: 10px;
+    padding-left:10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    position: relative;
+    left:20%;
+}
+
+.sign-switch{
+    display: block;
+    margin-bottom: 2em;
+}
+@media(min-width :413px){
+    .password-div{
+        right:17%;
+        
+    }
+
+    .email-div{
+        
+       right:21%;
+      
+    }
+
+    .sign-button{
+        left: 17.5%;
+    }
+}
+
+@media(min-width :1085px){
+    .sign-input-div{
+        width: 30%;
+        border: 2px solid black;
+        margin-top: 0;
+    }
+    .sign-header{
+        margin-top: 3em;
+    }
+    .sign-button{
+        font-size: 1em;
+    }
+}   

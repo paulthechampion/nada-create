@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Yusei+Magic&display=swap');
 @import "shared/productCover.css";
 @import "shared/header.css";
+@import "shared/footer.css";
 @import "shared/home.css";
 @import "shared/shop.css";
+@import "shared/cart.css";
+@import "shared/sign.css";
+@import "shared/checkout.css";
+@import "shared/preview.css";
+
+html {
+  scroll-behavior: smooth;
+}
 
 body{
     margin:0px; 
@@ -10,6 +19,27 @@ body{
     background-color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
     
+}
+
+body:after{
+  content:"";
+  position:fixed; /* stretch a fixed position to the whole screen */
+  top:0;
+  height:100vh; /* fix for mobile browser address bar appearing disappearing */
+  left:0;
+  right:0;
+  z-index:-1; /* needed to keep in the background */
+}
+
+main {
+  min-height: 100%;
+  margin-bottom: -100px;
+   width: 100%;
+  }
+main:after {
+  content: "";
+  display: block;
+  height: 20em
 }
 
 .slide-container{

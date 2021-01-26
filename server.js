@@ -41,6 +41,7 @@ app.use(validator())
 app.use((req,res,next)=>{
     res.locals.login= req.isAuthenticated();
     res.locals.session = req.session
+    res.locals.loggedInUser = req.user
     next()
 })
 

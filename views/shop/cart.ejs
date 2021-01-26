@@ -1,54 +1,85 @@
     <script src="/script/cart.js" async></script>
-    <h3 class="head-item1">CART</h3>
+<main>
     <%if(products){%>
-        <section class="shopSec">
+        <div class="line-header-wrap">
+                <div class="shop-line"></div> 
+                <h1 class="shop-header">cart</h1>
+        </div>
+        <section class="cartSec">
             
-                
-            
+    
+        
+        <div class="cart-flex">
             <div class="cart-items">
-                
                 <%products.forEach(product=>{%>
+                        <div class="cartColomn">
+                            <div class="cart-colom-flex">
+                                <div class="product-cart-name-div">
+                                <img src="<%=product.picture%>" class="product-cart-picture"/>
+                                    
+                                    <span class="product-cart-name"><%=product.item.name%></span>
+                                </div>
 
-                
-                <div class="cartRow">
-                    <div class="cartColomn cartItem">
-                        <img src="<%=product.picture%>" width="100" height="100" />
-                        <%=product.item.name%>
-                    </div>
-                       
-                    <div class="cartColomn cartQuantity">
-                        <div class="dropdown">
-                            <button class="dropbtn">Quantity
-                            <i class="fa fa-caret-down"></i>
-                            </button>
-                            <div class="dropdown-content">
-                               <a href="/store/add/<%=product.item._id%>">Add by 1</a>
-                                <a href="/store/reduce/<%=product.item._id%>">Reduce by 1</a>
-                                
-                            
+                                    <div class="cart-product-details">
+                                        <span class="plus-minus">
+                                            <a href="/store/add/<%=product.item._id%>" class="cart-links">
+                                                <i class="fa fa-plus" aria-hidden="true"></i>
+                                            </a>
+                                        <span class="product-quantity"> <%=product.qty%></span>
+                                            <a href="/store/reduce/<%=product.item._id%>" class="cart-links">
+                                                <i class="fa fa-minus" aria-hidden="true"></i>
+                                            </a>
+                                        </span> 
+                                    </div> 
+
+                                    <div class="product-cart-price">
+                                        <span class="cartPrice">NGN<%=product.price%></span>
+                                    </div>
+                                    
+                                    
+                                        <a href="/store/remove/<%=product.item._id%>" class="cart-links">
+                                            <i class="fa fa-times fa-lg times" aria-hidden="true"></i>
+                                        </a>
+                                    
+                                    
                             </div>
-                      </div>
-                         <span class="cartColomn cartPrice">$<%=product.price%></span>
+                        </div>
+                    <%})%>
+                  
+            </div>
+                
+            <div class="cart-summary">
+               <h1 class="cart-summary-header">Summary</h1>
+                    <div class="subtotal-div">
+                        <span class="cart-sub-total-title">Subtotal</span>
+                        <div class="cart-total-price">NGN10000</div>
+                    </div>
+
+                    <div class="delivery-div">
+                        <span class="cart-sub-total-title">Estimated Delivery & Handling</span>
+                        <div class="cart-total-price">NGN10000</div>
+                    </div>
+
+                    <div class="total-div">
+                        <hr class="total-hr hr-top">
+                        <span class="cart-total-title">TOTAL</span>
+                        <div class="cart-total-price">NGN<%=totalPrice%>000</div>
+                        <hr class="total-hr hr-btm">
                     </div>
                     
-                </div>
-                <a href="/store/remove/<%=product.item._id%>">Delete this Item</a>
-                <hr>
-                <%})%>
-                
-            
-                
-                
-            </div>   
-                <div class="cart-total">
-                <span class="cart-total-title">TOTAL=</span>
-                <span class="cart-total-price">$<%=totalPrice%></span>
-                </div>
+                    <a href="/store/checkout"  class="addCart-btn">CHECKOUT</a>
                     
-                <a href="/store/checkout"  class="addCart purc">PURCHASE</a>
+            </div>
+        </div>
+    
 
             </section>
+
     <%}else{%>
-        <p>Your Cart is empty, Patroize us by buying our products</p>
+        <hr>
+        <section class="empty-cart-section">
+        <p>Your Cart is empty, Patroize us by buying our Products</p>
+        </section>
      <%}%>   
+</main>     
     

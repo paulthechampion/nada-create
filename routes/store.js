@@ -44,6 +44,7 @@ app.get('/', async(req,res)=>{
         searchOption: req.query,
         next:results.next,
         previous:results.previous,
+  
       });
   
     }
@@ -62,7 +63,7 @@ app.get('/add-to-cart/:id', async(req,res)=>{
     cart.add(products, products.id, products.prodImagePath)
     req.session.cart=cart;
     //console.log(req.session.cart)
-    res.redirect('/store')
+    res.redirect(`/store/${req.params.id}`)
   }catch (err){
     console.error(err)
   }
@@ -159,6 +160,7 @@ app.get("/:id",async(req,res)=>{
     res.redirect("/store")
   }
 })
+
 
 
 function isLoggedIn(req,res,next){

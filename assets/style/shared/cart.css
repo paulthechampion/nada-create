@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.cartSec{
+    padding-top:2em;
+    padding-bottom: 2em;
+
+}
+
+
+.cartColomn{
+    margin-bottom: 2em;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 1px 2px rgb(175, 175, 175);
+    
+}
+
+.product-cart-name-div{
+    width: 30%;
+}
+
+.product-cart-name{
+    position: relative;
+   bottom: 0.7em;
+   left:1em 
+}
+
+.cart-product-details{
+    width: 30%; 
+   position: relative;
+   top:2.5em
+}
+
+.product-cart-price{
+   width: 30%;
+   position: relative;
+   top:2.5em
+}
+.cart-colom-flex{
+    display: flex;
+    flex-wrap: nowrap;
+   
+}
+
+.cart-flex{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.cart-items{
+    width: 100%;
+}
+
+.cart-summary{
+    height: 30em;
+    width:100%;
+    border: 1px solid black;
+    margin: auto;
+    padding:1em;
+}
+
+.cart-summary-header{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+
+.cart-links{
+    color: black;
+    text-decoration: none;
+}
+
+.plus-minus{
+    margin-left: 20%;
+}
+
+.product-quantity{
+    border: 1px solid black;
+    padding-left: 5px;
+    padding-right:5px ;
+}
+
+
+.product-cart-picture{
+    padding:1em;
+    width:60px ;
+    height:60px;
+}
+
+.times{
+    top:1em;
+    
+    color: red;
+}
+
+.cart-total-price{
+    float: right;
+    
+}
+
+.total-div{
+    margin-top: 5em;
+    
+}
+
+.total-hr{
+    color: rgb(228, 228, 228);
+}
+
+.delivery-div{
+    margin-top: 1.5em;
+}
+
+
+.addCart-btn{
+    display: block;
+    margin: 1em;
+    margin-top: 2em;
+    text-align: center;
+    padding:1em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.hr-top{
+    margin-bottom: 1em;
+}
+
+.hr-btm{
+    margin-top: 1em;
+}
+
+.empty-cart-section{
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1.5em;
+}
+
+@media(min-width :1085px){
+    .empty-cart-section{
+        font-size: 2em;
+    }
+    
+   .cart-items{
+        width: 65%;
+    }
+
+    .cart-summary{
+        height: 30em;
+        width:30%;
+    }
+
+    .product-cart-picture{
+        padding:1em;
+        width:100px ;
+        height:100px;
+    }
+
+    .product-cart-name{
+        position: relative;
+       bottom:3.9em ;
+       left:0;
+    }
+
+    .cart-product-details{
+       top:3.5em
+    }
+    .product-cart-price{
+        top:3.5em
+     }
+     .times{
+        top:1.6em;
+        left:2em;
+        color: red;
+    }
+    .cartSec{
+        padding-top: 0;
+        padding-bottom: 0;
+        padding:2em;
+    
+    }
+}    

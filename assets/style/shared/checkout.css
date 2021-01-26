@@ -1,0 +1,128 @@
+.checkout-div{
+    background-color: rgb(236, 233, 233);
+    width: 100%;
+    margin: auto;
+    padding-bottom:1.3em;
+    margin-top: 2em;
+}
+.checkout-header-div{
+    background-color: rgb(56, 55, 55);
+    color: white;
+    padding-bottom: .5em;
+    padding-top: .5em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+.checkout-details-div{
+    background-color: white;
+    margin: 0;
+    padding:0;
+    margin-left: 1em;
+    margin-right: 1em;
+    
+}
+.form-group{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.delivery-labels{
+    display: block;
+    width: 40%;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    display: relative;
+    padding-top: 7px;
+}
+
+.delivery-input{
+    width: 12em;
+    height: 2em;
+}
+
+.select-input{
+    width: 12.4em;
+    height: 2.3em;
+}
+
+.checkout-form-submit{
+    text-align: right;
+    margin-top: 2em;
+    margin-right: 1em;
+}
+
+.checkout-privacy{
+    background-color: rgb(236, 233, 233);
+    color: rgb(59, 57, 57);
+    margin: 1em;
+    width: 90%;
+    margin-top: 2em;
+}
+
+.checkout-submit-btn{
+    outline: none;
+    border: none;
+    border-radius:5px ;
+    background-color: rgb(7, 214, 17);
+    font-size: 1em;
+    color: white;
+    margin-bottom: 2em;
+    padding:10px;
+    padding-right: 20px;
+    padding-left:20px;
+}
+.checkout-price-div{
+    text-align: center;
+    
+}
+.chechout-H2{
+    padding-top: 2em; 
+    padding-bottom: 1em;
+}
+
+
+@media(min-width :1085px){
+.checkout-div{
+    width: 50%;
+    margin-bottom: 3em;
+    margin-top: 0;
+}
+
+.checkout-header-div{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+
+}
+
+.select-input{
+    width: 15.55em;
+    height: 2.5em;
+}
+.delivery-input{
+    width: 15em;
+    height: 2em;
+}
+.delivery-labels{
+    width: 50%;
+    
+}
+.checkout-submit-btn{
+    outline: none;
+    border: none;
+    border-radius:5px ;
+    font-size: 1.5em;
+    margin-bottom: 2em;
+    padding:10px;
+    padding-right: 20px;
+    padding-left:20px;
+}
+.checkout-form-submit{
+    margin-top: 2em;
+    margin-right: 4.8em;
+}
+
+}    

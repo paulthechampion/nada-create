@@ -1,24 +1,35 @@
-
-<div>
-    <h2>Sign In</h2>
-    <%if (hasErrors) {%>
-       
-        <%message.forEach(messages=>{%>
-        <div> <%=messages%></div>
-  <%})}%>  
-   
-    <div>
-        <form action="/user/signin" method="POST">
-            <label>Email</label>
-            <input name="email" type="email"/>
-            <label>Password</label>
-            <input name="password" type="password"/>
-            <input type="hidden" name="_csrf" value="<%=csrfToken%>"/>
-            <button type="submit">Sign In</button>
-        </form>
-
-        Don't have an account?<a href="/user/signup">Sign Up</a>
-    </div>
-
+<main>
+    <div class="sign-div">
+        <h2 class=sign-header>SIGN IN</h2>
+        <%if (hasErrors) {%>
+        
+            <%message.forEach(messages=>{%>
+            <div class="sign-message-div"> <%=messages%></div>
+    <%})}%>  
     
-</div>
+        <div class="sign-input-div">
+            <form action="/user/signin" method="POST">
+
+                <div class="sign-input-small-div">
+                    <div class="email-div">
+                         <label>Email</label>
+                    </div>
+                    <input name="email" type="email" class="sign-input"autocomplete="off"/>
+                </div>
+
+                <div class="sign-input-small-div">
+                    <div class="password-div">
+                         <label>Password</label>
+                    </div>
+                    <input name="password" type="password" class="sign-input" autocomplete="off"/>
+                    <input type="hidden" name="_csrf" value="<%=csrfToken%>"/>
+                </div>
+                <button type="submit" class="sign-button">SIGN IN</button>
+            </form>
+
+            Don't have an account?<a href="/user/signup" class="sign-switch">Sign Up</a>
+        </div>
+
+        
+    </div>
+</main>

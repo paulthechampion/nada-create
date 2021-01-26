@@ -1,0 +1,153 @@
+
+.preview-flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.preview-product{
+    text-align: center;
+    width: 100%;
+}
+
+.preview-product-image{
+    width: 15em;
+    height: 15em;
+}
+.preview-details{
+    margin-top: 2em;
+    border-top:1px solid black;
+    width: 100%;
+    padding-top: 2em;
+    padding-left:4em;
+    
+}
+
+.preview-textarea{
+    color: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;;
+    margin-top: 2em;
+    outline: none;
+    border: none;
+    border: 1.5px solid black;
+    height: 15em;
+    width: 17.3em;
+    resize: none;
+    position: relative;
+    right: 6%;
+}
+
+.addCart{
+    outline: none;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding:10px;
+    
+}
+.addCart-div{
+    text-align: right;
+    margin-top: 2em;
+    margin-right: 7em;
+    
+}
+
+.product-price-number{
+    color: rgb(3, 194, 3);
+}
+
+.product-name-hr{
+    display: none;
+   margin-right: 7.8em;
+    color: black;
+}
+
+.preview-product-name-header{
+    margin: 0;
+}
+.preview-product-description-div{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+@media(min-width :373px){
+    .addCart-div{
+        text-align: right;
+        margin-top: 2em;
+        margin-right: 8.3em;   
+    }
+}
+@media(min-width :413px){
+    .preview-details{
+        margin-top: 2em;
+        border-top:1px solid black;
+        width: 100%;
+        padding-top: 2em;
+        padding-left:5.5em;
+        
+    }
+    .addCart-div{
+        text-align: right;
+        margin-top: 2em;
+        margin-right: 9.3em;   
+    }
+}
+
+@media(min-width :1085px){
+    
+.preview-second-product{
+    margin-top: 1em;
+}    
+.product-name-hr{
+    display: inherit;
+    margin-right: 7.8em;
+    color: black;
+    }   
+.preview-flex{
+    
+    margin-top: 0;
+  
+}    
+.preview-product-image{
+    width: 25em;
+    height: 25em;
+}
+
+.preview-textarea{
+    
+    height: 20em;
+    width: 27.3em;
+    right: 0;
+
+}
+.preview-product{
+    width: 40%;
+    margin-left: 5em;
+}
+.preview-details{
+    border-top:none;
+    width: 45%;
+    margin-right: 5em;
+    margin-top: 10em;
+    
+    padding-top: 0;
+    padding-left:0;
+}
+.addCart-div{
+    text-align: right;
+    margin-top: 2em;
+    margin-right: 7.8em;
+}
+} 
+
+@media(min-width :1435px){
+    .addCart-div{
+        
+        margin-right: 13em;
+    }
+}

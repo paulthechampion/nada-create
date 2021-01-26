@@ -1,1 +1,54 @@
-The price is <img src="<%=product.prodImagePath%>" alt="product" style="height:7em">
+<div class="preview-flex">
+    <div class="preview-product">
+        <div class="preview-first-product">
+            <img src="<%=product.prodImagePath%>" class="preview-product-image" alt="product">
+        </div>
+        <div class="preview-second-product">
+            <img src="<%=product.prodImagePath%>" class="preview-product-image" alt="product">
+        </div>
+    </div>
+
+    <div class="preview-details">
+        <div>
+            <h2 class="preview-product-name-header"><%=product.name%></h2><hr class="product-name-hr">
+           <div class="preview-product-description-div">
+                <%=product.description%>
+            </div> 
+            
+            <div>
+                Price:<span class="product-price-number"> NGN <%=product.price%></span>
+            </div>
+            
+            <span><p>Delivery in 7 days or less</p></span>
+        </div>
+
+        <div class="product-description">
+            <div class="product-size">
+                <label for="Size">Size:</label>
+                <select class="select-input">
+                    <option>
+                        Small
+                    </option>
+                    <option>
+                        Medium
+                    </option>
+                    <option>
+                        Large
+                    </option>
+                    <option>
+                        Extra-Large
+                    </option>
+                </select>
+            </div>
+            <textarea class="preview-textarea" placeholder="What Number and Name do you want at the back of your Jersey? And describe how you want the customization to look like."></textarea>
+            
+            
+        </div>
+        <div class="addCart-div">
+             <a href= "/store/add-to-cart/<%=product.id%>" class="addCart">ADD TO CART</a>
+        </div>
+    </div>
+
+</div>
+
+
