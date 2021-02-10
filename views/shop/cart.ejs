@@ -1,5 +1,5 @@
     <script src="/script/cart.js" async></script>
-<main>
+
     <%if(products){%>
         <div class="line-header-wrap">
                 <div class="shop-line"></div> 
@@ -52,18 +52,18 @@
                <h1 class="cart-summary-header">Summary</h1>
                     <div class="subtotal-div">
                         <span class="cart-sub-total-title">Subtotal</span>
-                        <div class="cart-total-price">NGN10000</div>
+                        <div class="cart-total-price">NGN<%=subTotal%></div>
                     </div>
 
                     <div class="delivery-div">
                         <span class="cart-sub-total-title">Estimated Delivery & Handling</span>
-                        <div class="cart-total-price">NGN10000</div>
+                        <div class="cart-total-price">NGN1500</div>
                     </div>
 
                     <div class="total-div">
                         <hr class="total-hr hr-top">
                         <span class="cart-total-title">TOTAL</span>
-                        <div class="cart-total-price">NGN<%=totalPrice%>000</div>
+                        <div class="cart-total-price">NGN<%=totalPrice%></div>
                         <hr class="total-hr hr-btm">
                     </div>
                     
@@ -81,5 +81,3 @@
         <p>Your Cart is empty, Patroize us by buying our Products</p>
         </section>
      <%}%>   
-</main>     
-    

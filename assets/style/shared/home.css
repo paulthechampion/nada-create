@@ -21,7 +21,7 @@
 }
 
 .photoblast-div{
-    height:16em;
+    height:17em;
     border: 1px solid black;
     width: 20em;
     margin-left:auto;
@@ -33,7 +33,9 @@
     border: 3px solid whitesmoke;
     height:14em;
     background-color: black;
-    margin: 1em;
+    margin: 1.5em;
+    background-image: url("/images/dunsin.JPG");
+    background-size: cover;
 }
 
 .photoblast-header{
@@ -42,14 +44,21 @@
 }
 
 .photoblast-btn{
-    background-color: whitesmoke;
+    background-color:black;
     text-decoration: none;
-    color: black;
+    color:white ;
     position: relative;
     left:8em;
     padding:10px;
     margin-bottom: 3em;
     font-size: .5em;
+    cursor: pointer;
+    
+}
+
+.photoblast-btn:hover{
+    color: black;
+    background-color:white ;
 }
 
 .formen-women-div{
@@ -89,9 +98,9 @@
 }
 
 .wrapper-items{
-    margin: 2em; 
-    height: 15em; 
-    width: 10em;
+    margin: 0em; 
+    height: 9em; 
+    width: 9em;
     margin-bottom: 3em; 
    
     
@@ -113,7 +122,7 @@
 .wrapper-info{
     display: inline-block;
     position: relative;
-    right: 12.3em;
+    right: 8em;
     text-align: left;
     
 }
@@ -184,7 +193,7 @@
 }
 
 .random-display-section{
-    margin-top: 5em;
+
     height:20em;
     background-color: rgb(245, 236, 236);
 }
@@ -249,8 +258,8 @@
     }
     .wrapper-items{
         margin: 2em; 
-        height: 25em; 
-        width: 18em;
+        height: 20em; 
+        width: 20em;
         margin-bottom: 3em; 
        
         
@@ -268,7 +277,6 @@
     }
 
     .random-display-section{
-        margin-top: 5em;
         height:40em;
         background-color: rgb(245, 236, 236);
     }

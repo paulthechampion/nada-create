@@ -1,5 +1,5 @@
 
-<main>
+
     <section class="slide-section">
             <div class="slide-container">
                 <div class="image-container">
@@ -31,7 +31,7 @@
                     <div class="photoblast-second-div">
                         <div class="photoblast-info-div">
                         <h1 class="photoblast-header"> NEW YEAR PHOTOBLAST<br></h1>
-                            <a class="photoblast-btn">NEW COLLECTION</a>
+                            <a class="photoblast-btn" href="">NEW COLLECTION</a>
                         </div>
                     </div>
                 </div>
@@ -85,17 +85,24 @@
     </section>
 
     <section class="random-display-section">
-        
-    </section>
-        <div class="know">
-            <h1>Know when new kits drop</h1>
-            <p>Get informed when a Jersey and other products drop</p>
-            <a href="" class="joinEl">Join the Email list</a>
+        <div>
+            <% showProducts.forEach(product =>{%>
+            <a href="/store/<%=product.id%>" class="wrapper-link">
+            <img height="300px" src="<%=product.prodImagePath%>" >
+           </a>
+            <div> 
+                <%=product.name%><br>
+                <span> NGN <%=product.price%></span>
+            </div> 
+                
+             <%})%>
         </div>
-    
+    </section>
+    <i class="fa fa-arrow-circle-o-up up-arrow fa-2x" aria-hidden="true"></i>
 
 
-</main>
+
+
 
 
 

@@ -7,11 +7,12 @@
     
          
             <div class="shop-itemsss">
-                
-                <%if(previous){%>
-                    <a href="/store?page=<%=previous.page%>&limit=3" class="arrow">
-                        <i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
-                    <%}%>
+                <div class="top-arrow-div">
+                    <%if(previous){%>
+                        <a href="/store?page=<%=previous.page%>&limit=3" class="arrow">
+                            <i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
+                        <%}%>
+                </div>    
                 <div class="shop-items">
                     <% products.forEach(product =>{%>
                         
@@ -22,8 +23,8 @@
                                 <a href="/store/<%=product.id%>">
                                 <img class="store-products " src="<%=product.prodImagePath %>" >
                                 </a></br>
-                            <span class="club"><%=product.name%></span><br>
-                            <span class="price-tag">$<%=product.price%></span>
+                            <span class="club store-product-info"><%=product.name%></span><br>
+                            <span class="price-tag  store-product-info">NGN<%=product.price%></span>
                         
                         </div> 
                     
@@ -33,7 +34,7 @@
                 </div>
 
                 
-    
+                <div class="bottom-arrow-div">
                 <%if(previous){%>
                     <a href="/store?page=<%=previous.page%>&limit=3" class="arrow">
                         <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
@@ -44,19 +45,10 @@
                         <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
                     </a>
                 <%}%>
-            </div>
-            
-            <div class ="poem">
-
-                <h1>Weekly poetry</h1>
-                
-             lionccccodklknlkjdrlkr<br>fniorionfekifrnofoinfcrorofronfo<br>
-           
+                </div>
             </div>
 
-        <h3 class="head-item">BOOTS</h3>
-        <div class= 'NotAv'>Not Available at the moment</div>
-        </div>
+
 </section>
 
 <script>

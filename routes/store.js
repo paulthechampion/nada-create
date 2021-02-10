@@ -110,7 +110,7 @@ app.get('/cart', (req,res)=>{
   }
   let cart = new Cart(req.session.cart);
 
-  res.render('shop/cart',{products:cart.generateArray(), totalPrice: cart.totalPrice})
+  res.render('shop/cart',{products:cart.generateArray(), totalPrice: cart.totalPrice, subTotal:cart.subTotal})
 
 })
   

@@ -127,7 +127,13 @@
 .menuLink{
     text-decoration: none;
     color: black;
-    padding: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom:.5em ;
+}
+
+.menuLink:hover{
+    border-bottom: 2px solid black;
 }
 
 .fa-bars{
@@ -171,6 +177,7 @@
     
     
 }
+
 .phone-menu-header{
     margin-top: 1em;
 }

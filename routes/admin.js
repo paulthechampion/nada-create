@@ -43,6 +43,7 @@ app.post('/', async (req,res)=>{
        price: req.body.price,
      })
      saveCover(product, req.body.cover)
+     saveCoverBack(product, req.body.coverBack)
  
      try{
        const newProduct = await product.save();
@@ -60,6 +61,15 @@ function saveCover(product, coverEncoded){
             product.productImage = new Buffer.from(cover.data, 'base64')
             product.productImageType= cover.type
         }
+}
+
+function saveCoverBack(product, coverEncoded){
+  if(coverEncoded== null) return
+  const cover= JSON.parse(coverEncoded)
+  if(cover != null && imageMimeTypes.includes(cover.type)){
+      product.productImageBack = new Buffer.from(cover.data, 'base64')
+      product.productImageType= cover.type
+  }
 }
 
       async function renderNewPage(res, product, hasError= false){

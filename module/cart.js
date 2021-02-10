@@ -2,6 +2,7 @@ module.exports= function Cart(oldCart){
     this.items =oldCart.items || {};
     this.totalQty =oldCart.totalQty ||0;
     this.totalPrice =oldCart.totalPrice || 0;
+    this.subTotal =oldCart.subTotal || 0;
 
     
     this.add= function(item,id,picture){
@@ -15,7 +16,8 @@ module.exports= function Cart(oldCart){
         storedItem.price= storedItem.item.price * storedItem.qty
         
         this.totalQty++;
-        this.totalPrice += storedItem.item.price;
+        this.subTotal += storedItem.item.price 
+        this.totalPrice += storedItem.item.price + 1500;
         
     }
 
