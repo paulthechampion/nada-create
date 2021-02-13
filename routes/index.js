@@ -6,8 +6,7 @@ app.get('/', async(req,res)=>{
     let product
     let showProduct
     let random = Math.random()*100.
-    console.log(random)
-
+   
     try{
         product=await  Product.find().sort({createdAt:'desc'}).limit(10).exec()
         showProduct = await Product.aggregate(([{$sample:{size:1}}]))
@@ -22,7 +21,9 @@ app.get('/', async(req,res)=>{
         
     });
 
-
+app.get("/coming-soon",(req,res)=>{
+    res.render("coming-soon")
+})
 
 
 

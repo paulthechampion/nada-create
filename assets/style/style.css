@@ -8,6 +8,7 @@
 @import "shared/sign.css";
 @import "shared/checkout.css";
 @import "shared/preview.css";
+@import "shared/profile.css";
 
 
 .image-post{
@@ -90,3 +91,4 @@ main:after {
   right: 2em;
 
 }
+

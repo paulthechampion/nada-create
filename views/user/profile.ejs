@@ -1,29 +1,79 @@
-<div>
-    <div>
-        <h1>User Profile</h1>
+
+   
+        <div class="line-header-wrap">
+            <div class="shop-line profile-line"></div> 
+            <h1 class="shop-header profile-header">User Profile</h1>
+        </div>
         <hr>
-        <h2>My Orders</h2>
 
-        <%orders.forEach(order=>{%>
-            <div>
+        <div class="profile-info">
+            <div class="profile-left-div">
                 <div>
-                    <ul>
-                        <%order.items.forEach(itemss=>{%>
-                            <li>
-                                <%=itemss.price%> <%=itemss.item.name%> | <%=itemss.qty%>
-                            </li>
+                    <div class="profile-btn-div">
+                        <button class="profile-btn" onclick="under()">Profile</button>
+                    </div>
 
-                        <%})%>
-                    </ul>
-                </div>
-                <div>
-                    <%=order.cart.totalPrice%>
+                    <div class="profile-btn-div">
+                        <button class="profile-btn" onclick="showOrders()">Orders</button>
+                    </div>
+
+                    <div class="profile-btn-div">
+                        <button class="profile-btn" onclick="under()">Invitation</button>
+                    </div>
+
+                    <div class="profile-btn-div">
+                        <button class="profile-btn" onclick="under()">Payment</button>
+                    </div>
+                    <div class="profile-btn-div profile-btn-div-last">
+                        <button class="profile-btn profile-btn-last">Settings</button>
+                    </div>
                 </div>
             </div>
+                <div class="profile-right-div">
 
-        <%})%>
-    </div>
+                    <div class="construst" id="construst">
+                        <h1>Under Construction</h1>
+                    </div>
+
+                    <div class="orders-div" id="orders-div">
+                            <h2>My Orders</h2>
+
+                            <%orders.forEach(order=>{%>
+                                <div>
+                                    <div>
+                                        <ul>
+                                            <%order.items.forEach(itemss=>{%>
+                                                <li>
+                                                    <%=itemss.price%> <%=itemss.item.name%> | <%=itemss.qty%>
+                                                </li>
+                    
+                                            <%})%>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <%=order.cart.totalPrice%>
+                                    </div>
+                                </div>
+                    
+                            <%})%>
+                    </div>
+                </div>  
+            </div>
+
+            <script>
+
+                function showOrders(){
+                    document.getElementById("construst").style.display="none"
+                    document.getElementById("orders-div").style.display="block"
+                }
+
+                function under(){
+                    document.getElementById("orders-div").style.display="none"
+                    document.getElementById("construst").style.display="block"
+                }
+            </script>
+        
+        
 
 
-
-</div>
+   

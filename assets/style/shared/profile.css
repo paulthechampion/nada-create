@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+.profile-header{
+    font-size: 4em;
+    display: block;
+    position: relative;
+    right: 18%;
+    margin:auto; 
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.profile-line{
+   padding-bottom: 1.5em;
+}
+
+.profile-info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+.profile-right-div{
+    width: 60%;
+}
+
+.profile-left-div{
+width: 30%;
+border: 1px solid black;
+height: 15.4em;
+}    
+
+.profile-btn{
+    outline: none;
+    border: none;
+   background-color: white;
+   font-size:1em;
+   padding:.7em;
+   display: block;
+   width: 100%;
+   border: 1px solid black;
+   border-left: 1em solid black;
+   margin-bottom: .5em;
+   cursor: pointer;
+   
+}
+
+.profile-btn-last{
+    margin-bottom: 0em;
+}
+.profile-btn:hover{
+    background-color:  rgb(207, 158, 154);
+    border-left: 1em solid  rgb(180, 135, 76);
+}
+
+.orders-div{
+    display: none;
+  }
+
+@media(min-width:1084px){
+    .profile-btn{
+       font-size:2em;
+       padding:.7em;
+       border-left: 1em solid black;
+       margin-bottom: .5em;
+       cursor: pointer;
+       
+    }
+    .profile-info{
+        margin-bottom: 5em;
+    
+    }
+    .profile-left-div{
+        height: initial;
+    }
+    .profile-btn-last{
+        margin-bottom: 0em;
+    }
+}
