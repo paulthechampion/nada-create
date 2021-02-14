@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 .profile-header{
-    font-size: 4em;
+    font-size: 2em;
     display: block;
     position: relative;
-    right: 18%;
+    right: 9%;
     margin:auto; 
     font-family: 'Montserrat', sans-serif;
     
@@ -58,6 +58,10 @@ height: 15.4em;
     display: none;
   }
 
+.construst{
+  padding-left: 2em;
+}
+
 @media(min-width:1084px){
     .profile-btn{
        font-size:2em;
@@ -76,5 +80,10 @@ height: 15.4em;
     }
     .profile-btn-last{
         margin-bottom: 0em;
+    }
+    .profile-header{
+        font-size: 4em;
+       right:18%;
+        
     }
 }

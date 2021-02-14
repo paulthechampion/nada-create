@@ -4,7 +4,7 @@
        </h1> </div>
         <div class="checkout-details-div">
           <div class="checkout-price-div">
-            <h2 class="chechout-H2">Your Total: NGN<%=total%></h2> 
+            <h2 class="chechout-H2">Your Total: NGN <%=numberWithCommas(total)%></h2> 
           </div>
             <form id="paymentForm" method="POST" action="/store/checkout">
                 <div class="form-group">
@@ -72,7 +72,13 @@
         <script src="/script/paystack.js"></script>
                
             </script>
-                        
+
+            <%
+            function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+            %>
+                                
 
 
 

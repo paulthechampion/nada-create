@@ -9,7 +9,7 @@
             <div class="shop-itemsss">
                 <div class="top-arrow-div">
                     <%if(previous){%>
-                        <a href="/store?page=<%=previous.page%>&limit=3" class="arrow">
+                        <a href="/store?page=<%=previous.page%>&limit=12" class="arrow">
                             <i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
                         <%}%>
                 </div>    
@@ -24,7 +24,7 @@
                                 <img class="store-products " src="<%=product.prodImagePath %>" >
                                 </a></br>
                             <span class="club store-product-info"><%=product.name%></span><br>
-                            <span class="price-tag  store-product-info">NGN<%=product.price%></span>
+                            <span class="price-tag  store-product-info">NGN <%=numberWithCommas(product.price)%></span>
                         
                         </div> 
                     
@@ -36,12 +36,12 @@
                 
                 <div class="bottom-arrow-div">
                 <%if(previous){%>
-                    <a href="/store?page=<%=previous.page%>&limit=3" class="arrow">
+                    <a href="/store?page=<%=previous.page%>&limit=12" class="arrow">
                         <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
                     </a>
                 <%}%>
                 <%if(next){%>
-                    <a href="/store?page=<%=next.page%>&limit=3" class="arrow">
+                    <a href="/store?page=<%=next.page%>&limit=12" class="arrow">
                         <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
                     </a>
                 <%}%>
@@ -51,10 +51,11 @@
 
 </section>
 
-<script>
-    function show(){
-    console.log(req.query)}
-</script>
+    <%
+    function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+     }
+    %>
 
 
 

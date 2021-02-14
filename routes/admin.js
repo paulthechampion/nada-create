@@ -41,6 +41,7 @@ app.post('/', async (req,res)=>{
        gender:req.body.gender,
        description: req.body.description,
        price: req.body.price,
+       random:Math.random(),
      })
      saveCover(product, req.body.cover)
      saveCoverBack(product, req.body.coverBack)

@@ -72,6 +72,13 @@
     border: 7px solid black;
     height:13em;
     margin: 1em;
+    background-image: url("/images/woman-blast.jpg");
+    background-size: cover;
+}
+
+.men-second-div{
+    background-image: url("/images/formen.jpg");
+    background-size: cover; 
 }
 
 .formen-women-info{
@@ -83,6 +90,10 @@
     width: 60%;
     color: black;
     font-size: 1.2em;
+}
+
+.men-info{
+    color: white;
 }
 
 .bottom-men{
@@ -98,11 +109,11 @@
 }
 
 .wrapper-items{
-    margin: 0em; 
-    height: 9em; 
-    width: 9em;
+    margin: 10px; 
+    height: 11em; 
+    width: 11em;
     margin-bottom: 3em; 
-   
+    box-shadow: 5px 5px 5px #888888;
     
 }
 
@@ -122,7 +133,7 @@
 .wrapper-info{
     display: inline-block;
     position: relative;
-    right: 8em;
+    right: 11.7em;
     text-align: left;
     
 }
@@ -192,13 +203,69 @@
     padding:10px;
 }
 
-.random-display-section{
-
-    height:20em;
+.main-random-display-section{
     background-color: rgb(245, 236, 236);
+    margin: 0;
+    padding: 0;
+}
+.display-h{
+    margin: 0;
+    padding: 0;
+}
+.display-h2-element{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0;
+    padding-top:1em;
+}
+.random-display-section{
+    padding-bottom: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2em;
+    margin: auto;
 }
 
-@media(min-width :1085px){
+.display-pic{
+    height: 8em;
+    width: 8em;
+    
+}
+
+.display-div{
+    height: 8em;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px #888888;
+    margin: auto;
+    margin-top: 2em;
+}
+
+
+.display-name-div{
+    background-color: white;
+    height: 8em;
+    width: 8em;
+    padding: 1em;
+    padding-top: 0.5em;
+    box-sizing: border-box;
+}
+.display-link{
+    text-decoration: none;
+    color: black;
+    outline: none;
+    display: block;
+    margin: auto;
+}
+.display-price{
+    color: chartreuse;
+}
+
+
+@media(min-width :1083px){
     .dicover-new-header{ 
         font-size: 4em;
         
@@ -267,7 +334,7 @@
     .wrapper-info{
         display: inline-block;
         position: relative;
-        right: 20.3em;
+        right: 22em;
         text-align: left;   
     }
 
@@ -277,9 +344,14 @@
     }
 
     .random-display-section{
-        height:40em;
-        background-color: rgb(245, 236, 236);
+        padding-bottom: 0;
+        margin: auto;
     }
+
+    .main-random-display-section{
+        height:45em;
+    }
+    
     .display-section-div{
         top:22em;
         width: 30%;
@@ -293,4 +365,27 @@
     .display-section-link{
         padding:10px;
     }
+    .display-name-div{
+        height: 12em;
+        width: 12em;
+        padding: 1em;
+        padding-top: 2em;
+    }
+    .display-pic{
+        height: 12em;
+        width: 12em;
+    }
+    .display-div{
+        height: 12em;
+        margin-top: 0;
+        margin-bottom: 2em;
+    }
+    .display-h2-element{
+        text-align: center;
+        font-size: 3em;
+        margin: 0;
+        padding-top:1em;
+        padding-bottom: 1em;
+    }
+    
 }   

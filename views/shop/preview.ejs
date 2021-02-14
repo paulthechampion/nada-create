@@ -16,7 +16,7 @@
             </div> 
             
             <div>
-                Price:<span class="product-price-number"> NGN <%=product.price%></span>
+                Price:<span class="product-price-number"> NGN <%=numberWithCommas(product.price)%></span>
             </div>
             
             <span><p>Delivery in 7 days or less</p></span>
@@ -50,5 +50,11 @@
     </div>
 
 </div>
+
+    <%
+    function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+     }
+    %>
 
 

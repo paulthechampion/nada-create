@@ -18,7 +18,7 @@
             </div>
 
             <div class="dicover-new-div"><h1 class="dicover-new-header">DISCOVER NEW TRENDS</h1>
-                <a href="/store?page=1&limit=1" class="shop-now btn">SHOP NOW</a>
+                <a href="/store?page=1&limit=10" class="shop-now btn">SHOP NOW</a>
             </div>
     </section>
 
@@ -36,15 +36,15 @@
             </div>
             <div class="photoblast-divs">
                 <div class="formen-women-div">
-                   <div class="formen-women-second-div">
+                   <div class="formen-women-second-div ">
                        
                         <a href="" class="formen-women-info">MID SUMMER WOMEN</a>
                     </div>
                 </div>
 
                 <div class="formen-women-div bottom-men">
-                    <div class="formen-women-second-div">
-                        <a href="" class="formen-women-info"> SHOP EXCLUSIVE MEN </a>
+                    <div class="formen-women-second-div men-second-div">
+                        <a href="" class="formen-women-info men-info"> SHOP EXCLUSIVE MEN </a>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                    </a>
                     <div class="wrapper-info"> 
                         <%=product.name%><br>
-                        <span class="wrapper-price"> NGN <%=product.price%></span>
+                        <span class="wrapper-price"> NGN <%=numberWithCommas(product.price)%></span>
                     </div> 
                         
                      <%})%>
@@ -81,26 +81,41 @@
             <a href="" class="display-section-link">SHOP WOMEN</a>
         </div>
     </section>
-
-    <section class="random-display-section">
-        <div>
-            <% showProducts.forEach(product =>{%>
-            <a href="/store/<%=product.id%>" class="wrapper-link">
-            <img height="300px" src="<%=product.prodImagePath%>" >
-           </a>
-            <div> 
-                <%=product.name%><br>
-                <span> NGN <%=product.price%></span>
-            </div> 
+    <section class="main-random-display-section" id="random">
+         <div class="display-h">
+            <h2 class="display-h2-element">FEATURED PRODUCTS</h2>
+         </div> 
+   
+        <div class="random-display-section">
                 
-             <%})%>
+                <% showProducts.forEach(product =>{%>
+                    <a href="/store/<%=product.id%>" class="display-link">
+                    <div class="display-div">
+                        <div class="display-name-div"> 
+                            NAME: <%=product.name%><br><br>
+                            PRICE: NGN <span class="display-price"><%=numberWithCommas(product.price)%></span>
+                        </div> 
+                        <div class="display-pic-div">
+                            <img class="display-pic" src="<%=product.prodImagePath%>" >
+                        </div>
+                        
+                    </div> 
+                    </a>  
+                <%})%>
+                    
+        
         </div>
     </section>
+    
     <i class="fa fa-arrow-circle-o-up up-arrow fa-2x" aria-hidden="true"></i>
 
 
 
-
+    <%
+    function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+     }
+    %>
 
 
 
