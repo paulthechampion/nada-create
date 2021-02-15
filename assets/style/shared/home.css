@@ -109,7 +109,7 @@
 }
 
 .wrapper-items{
-    margin: 10px; 
+    margin:10px; 
     height: 11em; 
     width: 11em;
     margin-bottom: 3em; 
@@ -122,9 +122,18 @@
 .wrapper-div{
     overflow-x: auto;
     white-space: nowrap;   
-    
     scrollbar-width: none;
+    
      
+}
+.wrapper-inside-div{
+    display: inline;
+}
+.wrapper-inside-div{
+    margin-left: -6em;
+}
+.wrapper-inside-div:first-child{
+    margin-left: 0em;
 }
 .wrapper-div::-webkit-scrollbar{
     display: none;
@@ -227,13 +236,13 @@
 }
 
 .display-pic{
-    height: 8em;
-    width: 8em;
+    height: 10em;
+    width: 10em;
     
 }
 
 .display-div{
-    height: 8em;
+    height: 10em;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -247,8 +256,8 @@
 
 .display-name-div{
     background-color: white;
-    height: 8em;
-    width: 8em;
+    height: 10em;
+    width: 10em;
     padding: 1em;
     padding-top: 0.5em;
     box-sizing: border-box;
@@ -328,8 +337,12 @@
         height: 20em; 
         width: 20em;
         margin-bottom: 3em; 
-       
-        
+    }
+    .wrapper-inside-div{
+        margin-left: 0em;
+    }
+    .wrapper-inside-div:first-child{
+        margin-left: 0em;
     }
     .wrapper-info{
         display: inline-block;

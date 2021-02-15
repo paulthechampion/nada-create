@@ -29,7 +29,7 @@
                     <div class="photoblast-second-div">
                         <div class="photoblast-info-div">
                         <h1 class="photoblast-header"> NEW YEAR PHOTOBLAST<br></h1>
-                            <a class="photoblast-btn" href="">NEW COLLECTION</a>
+                            <a class="photoblast-btn" href="/coming-soon">NEW COLLECTION</a>
                         </div>
                     </div>
                 </div>
@@ -38,13 +38,13 @@
                 <div class="formen-women-div">
                    <div class="formen-women-second-div ">
                        
-                        <a href="" class="formen-women-info">MID SUMMER WOMEN</a>
+                        <a href="/coming-soon" class="formen-women-info">MID SUMMER WOMEN</a>
                     </div>
                 </div>
 
                 <div class="formen-women-div bottom-men">
                     <div class="formen-women-second-div men-second-div">
-                        <a href="" class="formen-women-info men-info"> SHOP EXCLUSIVE MEN </a>
+                        <a href="/coming-soon" class="formen-women-info men-info"> SHOP EXCLUSIVE MEN </a>
                     </div>
                 </div>
             </div>
@@ -58,15 +58,17 @@
         <div class="newRelease">
             <h2 class="new-release-header">NEW RELEASES</h2>
             <div class="wrapper">
-                <div class="wrapper-div"><% products.forEach(product =>{%>
-                    <a href="/store/<%=product.id%>" class="wrapper-link">
-                    <img class=" wrapper-items" src="<%=product.prodImagePath %>" >
-                   </a>
-                    <div class="wrapper-info"> 
-                        <%=product.name%><br>
-                        <span class="wrapper-price"> NGN <%=numberWithCommas(product.price)%></span>
-                    </div> 
-                        
+                <div class="wrapper-div">
+                    <% products.forEach(product =>{%>
+                    <div class="wrapper-inside-div">
+                        <a href="/store/<%=product.id%>" class="wrapper-link">
+                        <img class=" wrapper-items" src="<%=product.prodImagePath %>" >
+                        </a>
+                        <div class="wrapper-info"> 
+                            <%=product.name%><br>
+                            <span class="wrapper-price"> NGN <%=numberWithCommas(product.price)%></span>
+                        </div> 
+                    </div>   
                      <%})%>
                 </div>
                 
