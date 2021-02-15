@@ -1,6 +1,14 @@
 const { Buffer } = require('buffer');
 const mongoose = require('mongoose');
 
+let schemaOptions = {
+    toObject: {
+      virtuals: true
+    }
+    ,toJSON: {
+      virtuals: true
+    }
+  };
 
 const productSchema = new mongoose.Schema({
     name:{
@@ -40,11 +48,7 @@ const productSchema = new mongoose.Schema({
         type:Number
     }
   
-},
-{
-    toObject: { virtuals: true },
-    toJSON: { virtuals: true }
-}
+},schemaOptions
 );
 
 productSchema.virtual('prodImagePath').get(function(){
@@ -60,6 +64,7 @@ productSchema.virtual('prodImageBackPath').get(function(){
          ${this.productImageBack.toString('base64')}`
     }
 })
+
 
 
 module.exports= mongoose.model('products', productSchema);

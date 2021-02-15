@@ -13,7 +13,6 @@ app.get('/', async(req,res)=>{
         if(showProduct.length === 0){
           showProduct = await Product.find({random:{$gt:random}}).limit(6).exec()
         }
-
        
         
        
