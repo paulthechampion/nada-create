@@ -53,15 +53,13 @@ const productSchema = new mongoose.Schema({
 
 productSchema.virtual('prodImagePath').get(function(){
     if(this.productImage != null && this.productImageType != null){
-        return `data:${this.productImageType}; charset=utf-8; base64,
-         ${this.productImage.toString('base64')}`
+        return `data:${this.productImageType}; charset=utf-8;base64, ${this.productImage.toString('base64')}`
     }
 })
 
 productSchema.virtual('prodImageBackPath').get(function(){
     if(this.productImageBack != null && this.productImageType != null){
-        return `data:${this.productImageType}; charset=utf-8; base64,
-         ${this.productImageBack.toString('base64')}`
+        return `data:${this.productImageType};charset=utf-8;base64,${this.productImageBack.toString('base64')}`
     }
 })
 
