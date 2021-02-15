@@ -40,7 +40,12 @@ const productSchema = new mongoose.Schema({
         type:Number
     }
   
-});
+},
+{
+    toObject: { virtuals: true },
+    toJSON: { virtuals: true }
+}
+);
 
 productSchema.virtual('prodImagePath').get(function(){
     if(this.productImage != null && this.productImageType != null){
