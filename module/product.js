@@ -65,6 +65,10 @@ productSchema.virtual('prodImageBackPath').get(function(){
     }
 })
 
+productSchema.virtual('nameGen').get(function(){
+    return `${this.name}  ${this.gender}  ${this.price}`
+})
+
 
 
 module.exports= mongoose.model('products', productSchema);
