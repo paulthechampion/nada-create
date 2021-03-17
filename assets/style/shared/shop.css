@@ -67,6 +67,33 @@
     margin-bottom: .5em;
 }
 
+.search-div{
+    text-align: center;
+    margin: 2em;
+    margin-bottom: 4em;
+    margin-left: 4em;
+}
+
+.search-btn{
+    outline: none;
+    border: none;
+    background-color: white;
+    position: relative;
+    top:.3em;
+}
+
+.search-btn:hover{
+    cursor: pointer;
+}
+
+.search-div >input{
+    border: none;
+    border: 2px solid rgb(56, 56, 56);
+    height: 2em;
+    width: 15em;
+    border-radius: 5px;
+}
+
 
 @media(min-width :413px){
     .shop-line{
@@ -75,7 +102,9 @@
 }
 
 @media(min-width :1085px){
-
+    .search-div{
+        margin-left: 0;
+    }
     .bottom-arrow-div{
         
         margin-right: 5em;

@@ -9,10 +9,10 @@ const Order = require("../module/order");
 
 app.get('/', async(req,res)=>{
   
-   /* let query= Product.find()
-    if(req.query.name != null && req.query.name != ''){
-      query= query.regex('title', new RegExp(req.query.title, 'i'))
-    }*/
+  let searchOption= {};
+  if(req.query.name !== null && req.query.name !== ''){
+      searchOption.name=new RegExp(req.query.name, 'i');
+  };
   const page= parseInt(req.query.page)
   const limit = parseInt(req.query.limit)
 
@@ -38,7 +38,7 @@ app.get('/', async(req,res)=>{
   }
   
     try{
-       results.Productresults = await Product.find().limit(limit).skip(startIndex).exec()
+       results.Productresults = await Product.find(searchOption).limit(limit).skip(startIndex).exec()
       res.render('shop/store',{
         products:results.Productresults,
         searchOption: req.query,
