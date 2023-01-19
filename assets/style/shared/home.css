@@ -192,7 +192,7 @@
 
 .display-section-div{
     text-align: right;
-    color: white;
+    color: black;
     margin: auto;
     position: relative;
     top:10em;
@@ -207,9 +207,15 @@
 .display-section-link{
     outline: none;
     text-decoration: none;
+    background-color: black;
+    color: white;
+    padding:10px;
+}
+
+.display-section-link:hover{ 
     background-color: white;
     color: black;
-    padding:10px;
+    border: 2px solid black;
 }
 
 .main-random-display-section{
