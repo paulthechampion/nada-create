@@ -92,3 +92,7 @@ main:after {
 
 }
 
+.up-arrow :hover{
+  cursor: pointer;
+}
+
