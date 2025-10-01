@@ -70,8 +70,13 @@ declare module 'stripe' {
         | 'business_logo'
         | 'customer_signature'
         | 'dispute_evidence'
+        | 'document_provider_identity_document'
+        | 'finance_report_run'
         | 'identity_document'
+        | 'identity_document_downloadable'
         | 'pci_document'
+        | 'selfie'
+        | 'sigma_scheduled_query'
         | 'tax_document_user_upload';
     }
 
@@ -109,7 +114,9 @@ declare module 'stripe' {
         | 'document_provider_identity_document'
         | 'finance_report_run'
         | 'identity_document'
+        | 'identity_document_downloadable'
         | 'pci_document'
+        | 'selfie'
         | 'sigma_scheduled_query'
         | 'tax_document_user_upload';
     }
